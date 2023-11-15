@@ -1,0 +1,1668 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8"> 
+		<!--Titre et logo du site-->
+		<title> Tech'Web </title>
+		<link rel="icon" type="image/x-icon" href="images\logo-webtech.png">
+		<!--Lien code CSS-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <script src='css.js' async></script>
+	</head>
+	<body id="html-page-css">
+		<!--Titre principal et logo-->
+        <div class="header">
+            <div class="logo-principal">
+                <img src="images\logo-webtech.png" alt="Logo Tech'Web" width="200px">
+            </div>
+            <div class="titre">    
+                <p>Tech'Web</p>
+            </div>
+        </div>
+		<!--Navigation-->
+        <ul class="menu">
+			<!--Page d'accueil-->
+            <li class="menu-accueil">
+              <a href="index.html">Accueil</a>
+            </li>
+			<!--Page Python-->
+            <li class="menu-python">
+                <a href="python.html">Python</a>
+            </li>
+			<!--Menu Web et Page Web-->
+            <li class="menu-web">
+                <a href="web.html">Web</a>
+				<ul class="sous-menu">
+                    <!--Page HTML-->
+					<li>
+						<a href="html.html">HTML</a>
+                    </li>
+					<!--Page CSS-->
+                    <li>
+						<a href="css.html">CSS</a>
+                    </li>
+					<!--Page JS-->
+                    <li>
+						<a href="js.html">JavaScript</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="conteneur">
+            <div class="nav-lateral">
+                <ul class="lateral">
+                    <!--1. Intégration d'une page CSS-->
+                    <li class="menu-page-css">
+                      <a href="#nav-page-css">1. Intégration d'une page CSS</a>
+                    </li> 
+                    <!--2. Sélecteur CSS-->
+                    <li class="menu-selecteur-css">
+                        <a href="#nav-selecteur-css">2. Sélecteur CSS</a>
+                    </li> 
+                    <!--3. Utilisation des clas et des id-->
+                    <li class="menu-class-css">
+                        <a href="#nav-class-css">3. Utilisation des class et des id</a>
+                    </li> 
+                    <!--4. Mise en forme-->
+                    <li class="menu-forme-css">
+                        <a href="#nav-forme-css">4. Mise en forme</a>
+                    </li>
+                    <!--5. Marge intérieur et extérieur-->
+                    <li class="menu-marge-css">
+                        <a href="#nav-marge-css">5. Marge intérieure et extérieure</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Fond du site--> 
+            <div class="background">
+                <h1>CSS</h1>
+                <!--Texte accueil-->
+                <div class="bloc-txt">
+                    <p class="intro">CSS est un langage qui permet de définir la taille, la couleur, la police, la disposition et d'autres aspects de l'apparence des éléments HTML.</p>
+                </div>
+                <!--Base CSS-->
+                <div class="bloc-txt">
+                    <div class="base-css">
+                        <p class="chapitre">Nous allons voir les bases du langage CSS :</p>
+                        <!--1. Intégration d'une page CSS-->
+                        <div class="page-css">
+                            <h2 id="nav-page-css" class="description">1. Intégration d'une page CSS</h2>
+                            <div class="bloc-code">
+                                <div class="code html-css">
+                                    <div id="button-html-1" class="button-html-css">
+                                        <button class="bouton-html">
+                                            HTML
+                                        </button>
+                                        <div id="code-html-1"> 
+                                            <code class="code-2">
+                                                <div>                                                                           
+                                                    <div>
+                                                        <span class="indentation">
+                                                            <p>
+                                                                <span class="html-autre">
+                                                                    <
+                                                                </span>
+                                                                <span class="html-balise">
+                                                                    head
+                                                                </span>
+                                                                <span class="html-autre">
+                                                                    ></br>
+                                                                </span>
+                                                            </p>                                                            
+                                                        </span>   
+                                                    </div> 
+                                                </div>
+                                                <div>    
+                                                    <span class="indentation-2">
+                                                        <p>
+                                                            <span class="html-autre">
+                                                                <
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                meta
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                charset
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                =
+                                                            </span>
+                                                            <span class="html-lien-balise">
+                                                                "UTF-8"
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                ></br>
+                                                            </span>
+                                                        </p>
+                                                            
+                                                    </span>
+                                                    <span class="indentation-2">  
+                                                        <p>
+                                                            <span class="html-autre">
+                                                                <
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                title
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                >
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                Titre du site     
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                <        
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                /         
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                title
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                ></br>
+                                                            </span>
+                                                        </p>                                                             
+                                                    </span>
+                                                    <span class="indentation-2">
+                                                        <p>
+                                                            <span class="html-autre">
+                                                                <
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                link
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                rel
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                =
+                                                            </span>
+                                                            <span class="html-lien-balise">
+                                                                "icon"
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                type
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                =
+                                                            </span>
+                                                            <span class="html-lien-balise">
+                                                                "image/x-icon"
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                href
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                =
+                                                            </span>
+                                                            <span class="html-lien-balise">
+                                                                "images\logo-webtech.png"
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                >
+                                                            </span>
+                                                        </p>                                                            
+                                                    </span>
+                                                    <span class="indentation-2">
+                                                        <p>
+                                                            <span class="html-autre">
+                                                                <
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                link
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                rel
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                =
+                                                            </span>
+                                                            <span class="html-lien-balise">
+                                                                "stylesheet"
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                type
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                =
+                                                            </span>
+                                                            <span class="html-lien-balise">
+                                                                "text/css"
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                href
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                =
+                                                            </span>
+                                                            <span class="html-lien-balise">
+                                                                "style.css"
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                >
+                                                            </span>
+                                                        </p>
+                                                    </span>                                                           
+                                                    <span class="html-autre">
+                                                        <
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        /
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        head
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        >
+                                                    </span>
+                                                </div>
+                                            </code>
+                                        </div> 
+                                    </div>
+                                    <div id="button-css-1">                                      
+                                        <button class="bouton-css">
+                                            CSS
+                                        </button>
+                                        <div id="code-css-1"> 
+                                            <code>
+                                                <span class="css-commentaire">
+                                                    /*Page CSS*/
+                                                </span> 
+                                            </code>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            ...
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Pour mettre du style à votre site web, vous devez implémenter sur chaque page la feuille de style, codée en CSS. Une seule feuille de style suffit pour le site entier et non par page web.</p>
+                            </div>
+                        </div>
+                    
+                        <!--2. Sélecteur CSS-->
+                        <a id="nav-selecteur-css"></a>
+                        <div class="selecteur-css">
+                            <h2 class="description">2. Sélecteur CSS</h2>
+                            <div class="bloc-code">
+                                <div class="code html-css">
+                                    <div id="button-html-2" class="button-html-css">
+                                        <button class="bouton-html">
+                                            HTML
+                                        </button>
+                                        <div id="code-html-2"> 
+                                            <code>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un paragraphe
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span></br>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    h1
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un titre
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-balise">
+                                                    h1
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                            </code>
+                                        </div> 
+                                    </div>
+                                    <div id="button-css-2">                                      
+                                        <button class="bouton-css">
+                                            CSS
+                                        </button>
+                                        <div id="code-css-2"> 
+                                            <code>
+                                                <span class="css-balise">
+                                                    p
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            color
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            blue
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span> 
+                                                <span class="css-autre">
+                                                    }</br>
+                                                </span>
+                                                <span class="css-balise">
+                                                    h1
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            color
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            green
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span> 
+                                                <span class="css-autre">
+                                                    }
+                                                </span>
+                                            </code>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal demo-selecteur-css">
+                                            <p>Un paragraphe</p>
+                                            <h1>Un titre</h1>
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Pour rajouter un style à une balise, nous appellons cette dernière, dans le css et nous indiquons le style que nous souhaitons obtenir.</p>
+                            </div>
+                        <!--3. Utilisation des class et des id-->
+                        <a id="nav-class-css"></a>
+                        <div class="class-css">
+                            <h2 class="description">3. Utilisation des class et des id</h2>
+                            <div class="bloc-code">
+                                <div class="code html-css">
+                                    <div id="button-html-3" class="button-html-css">
+                                        <button class="bouton-html">
+                                            HTML
+                                        </button>
+                                        <div id="code-html-3"> 
+                                            <code>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    h1
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    id
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "titre"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un titre
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    h1
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span></br></br>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "texte"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un paragraphe 1
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span></br>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "texte"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un paragraphe 2
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span></br>
+                                            </code>
+                                        </div> 
+                                    </div>
+                                    <div id="button-css-3">                                      
+                                        <button class="bouton-css">
+                                            CSS
+                                        </button>
+                                        <div id="code-css-3"> 
+                                            <code>
+                                                <span class="css-class">
+                                                    #titre
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            color
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            #010d7b
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span> 
+                                                <span class="css-autre">
+                                                    }</br>
+                                                </span>
+                                                <span class="css-class">
+                                                    .texte
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            color
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            blue
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span> 
+                                                <span class="css-autre">
+                                                    }
+                                                </span>                                                
+                                            </code>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            <h1 class="demo-class-css-titre">Un titre</h1></br>
+                                            <p class="demo-class-css">Un paragraphe 1</p></br>
+                                            <p class="demo-class-css">Un paragraphe 2</p></br>
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Pour rajouter un style à une ou plusieurs balises, nous leur déterminons une même class et nous l'appellons en CSS, avec un . devant son nom. </br>Cependant, quand vous souhaitez attribuer un style à un élément unique, vous prévilégiez plutôt un id, que nous appellons ensuite en CSS, avec un # devant son nom. </p>
+                            </div>
+                        </div>
+                        <!--4. Mise en forme-->
+                        <a id="nav-forme-css"></a>
+                        <div class="forme-css">
+                            <h2 class="description">4. Mise en forme</h2>
+                            <div class="bloc-code">
+                                <div class="code html-css">
+                                    <div id="button-html-4" class="button-html-css">
+                                        <button class="bouton-html">
+                                            HTML
+                                        </button>
+                                        <div id="code-html-4"> 
+                                            <code>                                                
+                                                <!--Police-->
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "police"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un texte
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    ></br></br>
+                                                </span>
+                                                
+                                                <!--Taille-->
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "taille"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un texte
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    ></br></br>
+                                                </span>
+                                                
+                                                <!--Épaisseur du texte-->
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "epaisseur"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un texte
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    ></br></br>
+                                                </span>
+                                                
+                                                <!--Italique-->
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "italique"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un texte
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    ></br></br>
+                                                </span>
+                                                
+                                                <!--Décoration-->
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "decoration"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un texte
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    ></br></br>
+                                                </span>
+                                                
+                                                <!--Alignement-->
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "alignement"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un texte
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    ></br></br>
+                                                </span>
+                                                
+                                                <!--Alinéa-->
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "alinea"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un texte
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    ></br></br>
+                                                </span>
+                                                
+                                                <!--Couleur-->
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "couleur"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un texte
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    ></br></br>
+                                                </span>
+                                                
+                                                <!--Couleur fond-->
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "fond"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un texte
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    ></br></br>
+                                                </span>
+
+                                                <!--Opacité-->
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "opacite"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un texte
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    ></br></br>
+                                                </span>
+
+                                                <!--Bordure-->
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "bordure"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un texte
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                            </code>
+                                        </div> 
+                                    </div>
+                                    <div id="button-css-4">                                      
+                                        <button class="bouton-css">
+                                            CSS
+                                        </button>
+                                        <div id="code-css-4"> 
+                                            <code>
+
+                                                <!--Police-->
+                                                <span class="css-commentaire">
+                                                    /*Choisir une police d'écriture*/</br>
+                                                </span>
+                                                <span class="css-class">
+                                                    .police
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            font-family
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-texte">
+                                                            'Courier New'
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ,
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            Courier
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ,
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            monospace
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span>
+                                                <span class="css-autre">
+                                                    }
+                                                </span></br>
+
+                                                <!--Taille-->
+                                                <span class="css-commentaire">
+                                                    /*Choisir la taille d'écriture en em, px, %, ...*/</br>
+                                                </span>
+                                                <span class="css-class">
+                                                    .taille
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            font-size
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            40
+                                                        </span>
+                                                        <span class="css-valeur">
+                                                            px
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span>
+                                                <span class="css-autre">
+                                                    }
+                                                </span></br>
+
+                                                <!--Épaisseur du texte-->
+                                                <span class="css-commentaire">
+                                                    /*Changer l'épaisseur du texte lighter = fin, normal = normal et bold = gras*/</br>
+                                                </span>
+                                                <span class="css-class">
+                                                    .epaisseur
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            font-weight
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            bold
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span>
+                                                <span class="css-autre">
+                                                    }
+                                                </span></br>
+
+                                                <!--Italique-->
+                                                <span class="css-commentaire">
+                                                    /*Mettre un texte en italique*/</br>
+                                                </span>
+                                                <span class="css-class">
+                                                    .italique
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            font-style
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            italic
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span>
+                                                <span class="css-autre">
+                                                    }
+                                                </span></br>
+
+                                                <!--Décoration-->
+                                                <span class="css-commentaire">
+                                                    /*Décorer du texte underline = souligné et line-through = barré*/</br>
+                                                </span>
+                                                <span class="css-class">
+                                                    .decoration
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            text-decoration
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            underline
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span>
+                                                <span class="css-autre">
+                                                    }
+                                                </span></br>
+                                            
+                                                <!--Alignement-->
+                                                <span class="css-commentaire">
+                                                    /*Aligner un texte left = aligner à gauche, center = centrer un texte, right = aligner à droite et justify = justifier le texte*/</br>
+                                                </span>
+                                                <span class="css-class">
+                                                    .alignement
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            text-align
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            center
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span>
+                                                <span class="css-autre">
+                                                    }
+                                                </span></br>
+
+                                                <!--Alinéa-->
+                                                <span class="css-commentaire">
+                                                    /*Ajouter un alinéa*/</br>
+                                                </span>
+                                                <span class="css-class">
+                                                    .alinea
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            text-indent
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            20px
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span>
+                                                <span class="css-autre">
+                                                    }
+                                                </span></br>
+
+                                                <!--Couleur-->
+                                                <span class="css-commentaire">
+                                                    /*Mettre une couleur sur un texte*/</br>
+                                                </span>
+                                                <span class="css-class">
+                                                    .couleur
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            color
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            pink
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span>
+                                                <span class="css-autre">
+                                                    }
+                                                </span></br>
+                                                
+                                                <!--Couleur de fond-->
+                                                <span class="css-commentaire">
+                                                    /*Ajouter une couleur de fond*/</br>
+                                                </span>
+                                                <span class="css-class">
+                                                    .fond
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            background-color
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            yellow
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span>
+                                                <span class="css-autre">
+                                                    }
+                                                </span></br>
+
+                                                <!--Opacité-->
+                                                <span class="css-commentaire">
+                                                    /*Opacité d'un texte*/</br>
+                                                </span>
+                                                <span class="css-class">
+                                                    .opacite
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            opacity
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            40
+                                                        </span>
+                                                        <span class="css-valeur">
+                                                            %
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span>
+                                                <span class="css-autre">
+                                                    }
+                                                </span>
+
+                                                <!--Bordure-->
+                                                <span class="css-commentaire">
+                                                    /*Mettre une bordure*/</br>
+                                                </span>
+                                                <span class="css-class">
+                                                    .bordure
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <p class="css-particulier">
+                                                            border
+                                                        </p>
+                                                        <p class="css-ponctuation">
+                                                            :
+                                                        </p>
+                                                        <p class="css-parametre">
+                                                            2
+                                                        </p>
+                                                        <p class="css-valeur">
+                                                            px
+                                                        </p>
+                                                        <p class="css-parametre">
+                                                            solid
+                                                        </p>
+                                                        <p class="css-autre">
+                                                            ;
+                                                        </p>
+                                                    </p>
+                                                </span>
+                                                <span class="css-autre">
+                                                    }
+                                                </span>
+                                            </code>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            <p class="demo-police">
+                                                Un texte
+                                            </p>
+                                            <p class="demo-taille">
+                                                Un texte
+                                            </p>
+                                            <p class="demo-epaisseur">
+                                                Un texte
+                                            </p>
+                                            <p class="demo-italique">
+                                                Un texte
+                                            </p>
+                                            <p class="demo-decoration">
+                                                Un texte
+                                            </p>
+                                            <p class="demo-alignement">
+                                                Un texte
+                                            </p>
+                                            <p class="demo-alinea">
+                                                Un texte
+                                            </p><
+                                            <p class="demo-couleur">
+                                                Un texte
+                                            </p>
+                                            <p class="demo-fond">
+                                                Un texte
+                                            </p>
+                                            <p class="demo-opacite">
+                                                Un texte
+                                            </p>
+                                            <p class="demo-bordure">
+                                                Un texte
+                                            </p>
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Il existe différents paramètres pour mettre en forme vos pages web.</p>
+                            </div>
+                        </div>
+                        <!--5. Marge intérieur et extérieur-->
+                        <a id="nav-marge-css"></a>
+                        <div class="marge-css">
+                            <h2 class="description">5. Marge intérieure et extérieure</h2>
+                            <div class="bloc-code">
+                                <div class="code html-css">
+                                    <div id="button-html-5" class="button-html-css">
+                                        <button class="bouton-html">
+                                            HTML
+                                        </button>
+                                        <div id="code-html-5"> 
+                                            <code>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "interieur"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un paragraphe
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span></br>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    class
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "exterieur"
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Un paragraphe
+                                                </span>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    p
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                            </code>
+                                        </div> 
+                                    </div>
+                                    <div id="button-css-5">                                      
+                                        <button class="bouton-css">
+                                            CSS
+                                        </button>
+                                        <div id="code-css-5"> 
+                                            <code>
+                                                <span class="css-class">
+                                                    .interieur
+                                                </span>
+                                                <span class="css-autre">
+                                                    {
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            padding
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <spana class="css-parametre">
+                                                            2
+                                                        </span>
+                                                        <span class="css-valeur">
+                                                            px
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            6
+                                                        </span>
+                                                        <span class="css-valeur">
+                                                            px
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            2
+                                                        </span>
+                                                        <span class="css-valeur">
+                                                            px
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            6
+                                                        </span>
+                                                        <span class="css-valeur">
+                                                            px
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span>    
+                                                <span class="indentation">  
+                                                    <p>  
+                                                        <span class="css-particulier">
+                                                            border
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            2
+                                                        </span>
+                                                        <span class="css-valeur">
+                                                            px
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            solid
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;</br>
+                                                        </span>
+                                                </span> 
+                                                <span class="css-autre">
+                                                    }</br>
+                                                </span>
+
+                                                <span class="css-class">
+                                                    .exterieur
+                                                </span>
+                                                <span class="css-autre">
+                                                    {</br>
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <p class="css-particulier">
+                                                            margin
+                                                        </p>
+                                                        <p class="css-ponctuation">
+                                                            :
+                                                        </p>
+                                                        <p class="css-parametre">
+                                                            10
+                                                        </p>
+                                                        <p class="css-valeur">
+                                                            px
+                                                        </p>
+                                                        <p class="css-parametre">
+                                                            3
+                                                        </p>
+                                                        <p class="css-valeur">
+                                                            px
+                                                        </p>
+                                                        <p class="css-parametre">
+                                                            10
+                                                        </p>
+                                                        <p class="css-valeur">
+                                                            px
+                                                        </p>
+                                                        <p class="css-parametre">
+                                                            3
+                                                        </p>
+                                                        <p class="css-valeur">
+                                                            px
+                                                        </p>
+                                                        <p class="css-autre">
+                                                            ;
+                                                        </p>
+                                                    </p>
+                                                </span>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="css-particulier">
+                                                            border
+                                                        </span>
+                                                        <span class="css-ponctuation">
+                                                            :
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            2
+                                                        </span>
+                                                        <span class="css-valeur">
+                                                            px
+                                                        </span>
+                                                        <span class="css-parametre">
+                                                            solid
+                                                        </span>
+                                                        <span class="css-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span> 
+                                                <span class="css-autre">
+                                                    }
+                                                </span>
+                                            </code>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            <p class="demo-interieur-css">Un paragraphe</p></br>
+                                            <p class="demo-exterieur-css">Un paragraphe</p>
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Pour ajouter une marge extérieure à votre bloc, nous utiliserons le paramètre "margin", par contre, pour une marge intérieure à votre bloc, cela sera le paramètre "padding". </br>Dans chacun des paramètres, les valeurs représentent respectivement les marges haute, droite, basse et gauche.</p>
+                            </div>
+                        </div>
+                    </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+	<footer>
+        <div class="copyright">
+            <p>© 2023 Tech'Web créé par MARMAROLI Éléa</p>
+        </div>
+    </footer>
+</html>
+<!--  fin-->

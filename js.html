@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<!--Titre et logo du site-->
+		<title> Tech'Web </title>
+		<link rel="icon" type="image/x-icon" href="images\logo-webtech.png">
+		<!--Lien code CSS-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body id="html-page-js">
+		<!--Titre principal et logo-->
+        <div class="header">
+            <div class="logo-principal">
+                <img src="images\logo-webtech.png" alt="Logo Tech'Web" width="200px">
+            </div>
+            <div class="titre">    
+                <p>Tech'Web</p>
+            </div>
+        </div>
+		<!--Navigation-->
+        <ul class="menu">
+			<!--Page d'accueil-->
+            <li class="menu-accueil">
+              <a href="index.html">Accueil</a>
+            </li>
+			<!--Page Python-->
+            <li class="menu-python">
+                <a href="python.html">Python</a>
+            </li>
+			<!--Menu Web et Page Web-->
+            <li class="menu-web">
+                <a href="web.html">Web</a>
+				<ul class="sous-menu">
+                    <!--Page HTML-->
+					<li>
+						<a href="html.html">HTML</a>
+                    </li>
+					<!--Page CSS-->
+                    <li>
+						<a href="css.html">CSS</a>
+                    </li>
+					<!--Page JS-->
+                    <li>
+						<a href="js.html">JavaScript</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="conteneur">
+            <div class="nav-lateral">
+                <ul class="lateral">
+                    <!--1. Intégration d'une page JS-->
+                    <li class="menu-page-js">
+                      <a href="#nav-page-js">1. Intégration d'une page JS</a>
+                    </li> 
+                    <!--2. Déclarer une variable en JS-->
+                    <li class="menu-variable-js">
+                        <a href="#nav-variable-js">2. Déclarer une variable en JS</a>
+                    </li>
+                    <!--3. Ajouter un paragraphe à l'aide d'un bouton-->
+                    <li class="menu-ajout-p-js">
+                        <a href="#nav-ajout-p-js">3. Ajouter un paragraphe à l'aide d'un bouton</a>
+                    </li>
+                    <!--4. Afficher un pop-up grâce à un bouton-->
+                    <li class="menu-pop-up-js">
+                        <a href="#nav-pop-up-js">4. Afficher un pop-up grâce à un bouton</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Fond du site--> 
+            <div class="background">
+                <h1>CSS</h1>
+                <!--Texte accueil-->
+                <div class="bloc-txt">
+                    <p class="intro">JavaScript est un langage dynamique, qui va permettre de générer du contenu dynamique sur des pages web.</p>
+                </div>
+                <!--Base JavaScript-->
+                <div class="bloc-txt">
+                    <div class="base-js">
+                        <p class="chapitre">Nous allons voir les bases du langage JavaScript :</p>
+                        <!--1. Intégration d'une page Javascript-->
+                        <div class="page-js">
+                            <h2 id="nav-page-js" class="description">1. Intégration d'une page JS</h2>
+                            <div class="bloc-code">
+                                <div class="code html-js">
+                                    <div id="button-html-js-1" class="button-html-js">
+                                        <button class="bouton-html">
+                                            HTML
+                                        </button>
+                                        <div id="code-html-js-1"> 
+                                            <code class="code-2">
+                                                <div>                                                                           
+                                                    <div>
+                                                        <span class="html-autre">
+                                                            <
+                                                        </span>
+                                                        <span class="html-balise">
+                                                            head
+                                                        </span>
+                                                        <span class="html-autre">
+                                                            >
+                                                        </span></br>
+                                                    </div> 
+                                                </div>
+                                                <div>    
+                                                    <span class="indentation">
+                                                        <p>
+                                                            <span class="html-autre">
+                                                                <
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                meta
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                charset
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                =
+                                                            </span>
+                                                            <span class="html-lien-balise">
+                                                                "UTF-8"
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                >
+                                                            </span></br>
+                                                        </p>    
+                                                    </span>
+                                                    <span class="indentation">  
+                                                        <p>      
+                                                            <span class="html-autre">
+                                                                <
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                title
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                >
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                Titre du site     
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                <        
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                /         
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                title
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                >
+                                                            </span>    
+                                                        </p></br>
+                                                    </span>
+                                                    <span class="indentation">
+                                                        <p>
+                                                           <span class="html-autre">
+                                                                <
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                link
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                rel
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                =
+                                                            </span>
+                                                            <span class="html-lien-balise">
+                                                                "icon"
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                type
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                =
+                                                            </span>
+                                                            <span class="html-lien-balise">
+                                                                "image/x-icon"
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                href
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                =
+                                                            </span>
+                                                            <span class="html-lien-balise">
+                                                                "images\logo-webtech.png"
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                >
+                                                            </span> 
+                                                        </p>
+                                                    </span>
+                                                    <span class="indentation">
+                                                        <p>
+                                                            <span class="html-autre">
+                                                                <
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                script
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                src
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                =
+                                                            </span>
+                                                            <span class="html-lien-balise">
+                                                                "javascript.js"
+                                                            </span>
+                                                            <span class="html-parametre-balise">
+                                                                async
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                <
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                /
+                                                            </span>
+                                                            <span class="html-balise">
+                                                                script
+                                                            </span>
+                                                            <span class="html-autre">
+                                                                >
+                                                            </span>
+                                                        </p>
+                                                    </span>
+                                                    <p>
+                                                        <span class="html-autre">
+                                                            <
+                                                        </span>
+                                                        <span class="html-autre">
+                                                            /
+                                                        </span>
+                                                        <span class="html-balise">
+                                                            head
+                                                        </span>
+                                                        <span class="html-autre">
+                                                            >
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </code>
+                                        </div> 
+                                    </div>
+                                    <div id="button-js-1">                                      
+                                        <button class="bouton-js">
+                                            JS
+                                        </button>
+                                        <div id="code-js-1"> 
+                                            <code>
+                                                <span class="js-commentaire">
+                                                    /*Page JS*/
+                                                </span> 
+                                            </code>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            ...
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Pour intégrer du langage JavaScript dans du code HTML, vous devez les accrocher avec du DOM, à des id ou des class identifiés dans la structure HTML.</p>
+                            </div>
+                        </div>
+                    
+                        <!--2. Déclarer une variable en JS-->
+                        <a id="nav-variable-js"></a>
+                        <div class="ajout-p-js">
+                            <h2 class="description">2. Déclarer une variable en JS</h2>
+                            <div class="bloc-code">
+                                <div class="code html-js">
+                                    <div id="button-html-js-2" class="button-html-js">
+                                        <button class="bouton-html">
+                                            HTML
+                                        </button>
+                                        <div id="code-html-js-2"> 
+                                            <code>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    div
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    id
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-lien-balise">
+                                                    "nom-id"
+                                                </span>                                               
+                                                <span class="html-autre">
+                                                    >
+                                                </span></br>                           
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="html-autre">
+                                                            <
+                                                        </span>
+                                                        <span class="html-balise">
+                                                            h1
+                                                        </span>
+                                                        <span class="html-parametre-balise">
+                                                            class
+                                                        </span>
+                                                        <span class="html-balise">
+                                                            =
+                                                        </span>
+                                                        <span class="html-lien-balise">
+                                                            "nom-class"
+                                                        </span>  
+                                                        <span class="html-autre">
+                                                            >
+                                                        </span>
+                                                        <span class="html-autre">
+                                                            Un titre
+                                                        </span>
+                                                        <span class="html-autre">
+                                                            <
+                                                        </span>
+                                                        <span class="html-autre">
+                                                            /
+                                                        </span>
+                                                        <span class="html-balise">
+                                                            h1
+                                                        </span>
+                                                        <span class="html-autre">
+                                                            >
+                                                        </span>
+                                                    </p>
+                                                </span></br>    
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    div
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span></br>                                                
+                                            </code>
+                                        </div> 
+                                    </div>
+                                    <div id="button-js-2">                                      
+                                        <button class="bouton-js">
+                                            JS
+                                        </button>
+                                        <div id="code-js-2"> 
+                                            <code>
+                                                <span class="js-particulier">
+                                                   let
+                                                </span>
+                                                <span class="js-autre">
+                                                    nomVariable1 &nbsp;
+                                                </span>
+                                                <span class="js-ponctuation">
+                                                    =&nbsp; 
+                                                </span>
+                                                <span class="js-appel">
+                                                    document 
+                                                </span>
+                                                <span class="js-autre">
+                                                    . 
+                                                </span>
+                                                <span class="js-parametre">
+                                                    getElementById
+                                                </span>
+                                                <span class="js-autre">
+                                                    (
+                                                </span>
+                                                <span class="js-texte">
+                                                    "nom-id"
+                                                </span>
+                                                <span class="js-autre">
+                                                    )
+                                                </span>
+                                                <span class="js-autre">
+                                                    ;
+                                                </span></br>
+                                                </br>
+                                                <span class="js-particulier">
+                                                    let
+                                                 </span>
+                                                 <span class="js-autre">
+                                                     nomVariable2 &nbsp;
+                                                 </span>
+                                                 <span class="js-ponctuation">
+                                                     =&nbsp; 
+                                                 </span>
+                                                 <span class="js-appel">
+                                                     document 
+                                                 </span>
+                                                 <span class="js-autre">
+                                                     . 
+                                                 </span>
+                                                 <span class="js-parametre">
+                                                     getElementsByClass
+                                                 </span>
+                                                 <span class="js-autre">
+                                                     (
+                                                 </span>
+                                                 <span class="js-texte">
+                                                     "nom-class"
+                                                 </span>
+                                                 <span class="js-autre">
+                                                     )
+                                                 </span>
+                                                 <span class="js-autre">
+                                                     ;
+                                                 </span>
+                                            </code>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            ...
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Nous pouvons appeler une class ou une id dans le code JavaScript pour lui attribuer une animation.</p>
+                            </div>
+                        </div>
+                        <!--3. Ajouter un paragraphe à l'aide d'un bouton-->
+                        <a id="nav-ajout-p-js"></a>
+                        <div class="ajout-p-js">
+                            <h2 class="description">3. Ajouter un paragraphe à l'aide d'un bouton</h2>
+                            <div class="bloc-code">
+                                <div class="code html-js">
+                                    <div id="button-html-js-3" class="button-html-js">
+                                        <button class="bouton-html">
+                                            HTML
+                                        </button>
+                                        <div id="code-html-js-3"> 
+                                            <code>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    button
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    id
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    "bouton-ajout-paragraphe"
+                                                </span>               
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Ajouter un paragraphe
+                                                </span>        
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-balise">
+                                                    button
+                                                </span>                  
+                                                <span class="html-autre">
+                                                    >
+                                                </span></br>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    div
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    id
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    "ajout-paragraphe"
+                                                </span>               
+                                                <span class="html-autre">
+                                                    >
+                                                </span>    
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-balise">
+                                                    div
+                                                </span>                  
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                            </code>
+                                        </div> 
+                                    </div>
+                                    <div id="button-js-3">                                      
+                                        <button class="bouton-js">
+                                            JS
+                                        </button>
+                                        <div id="code-js-3"> 
+                                            <code>
+                                                <span class="js-particulier">
+                                                    let
+                                                </span>
+                                                <span class="js-autre">
+                                                    ajouter
+                                                </span>
+                                                <span class="js-ponctuation">
+                                                    =
+                                                </span>
+                                                <span class="js-appel">
+                                                    document
+                                                </span>
+                                                <span class="js-autre">
+                                                    .
+                                                </span>
+                                                <span class="js-parametre">
+                                                    getElementById
+                                                </span>
+                                                <span class="js-autre">
+                                                    (
+                                                </span>
+                                                <span class="js-texte">
+                                                    'bouton-ajout-paragraphe'
+                                                </span>
+                                                <span class="js-autre">
+                                                    )
+                                                </span>
+                                                <span class="js-autre">
+                                                    ;
+                                                </span></br></br>
+                                                <span class="js-autre">
+                                                    ajouter
+                                                </span>
+                                                <span class="js-autre">
+                                                    .
+                                                </span>
+                                                <span class="js-parametre">
+                                                    addEventListener
+                                                </span>
+                                                <span class="js-autre">
+                                                    (
+                                                </span>
+                                                <span class="js-texte">
+                                                    'click'
+                                                </span>
+                                                <span class="js-autre">
+                                                    ,
+                                                </span>
+                                                <span class="js-parametre">
+                                                    ajout
+                                                </span>
+                                                <span class="js-autre">
+                                                    )
+                                                </span>
+                                                <span class="js-autre">
+                                                    ;
+                                                </span></br></br>
+                                                <span class="js-particulier">
+                                                    function
+                                                </span>
+                                                <span class="js-parametre">
+                                                    ajout
+                                                </span>
+                                                <span class="js-autre">
+                                                    ()
+                                                </span>
+                                                <span class="js-autre">
+                                                    {
+                                                </span></br>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="js-particulier">
+                                                            let
+                                                        </span>
+                                                        <span class="js-autre">
+                                                            para
+                                                        </span>
+                                                        <span class="js-ponctuation">
+                                                            =
+                                                        </span>
+                                                        <span class="js-appel">
+                                                            document
+                                                        </span>
+                                                        <span class="js-autre">
+                                                            .
+                                                        </span>
+                                                        <span class="js-parametre">
+                                                            createElement
+                                                        </span>
+                                                        <span class="js-autre">
+                                                           (
+                                                        </span>
+                                                        <span class="js-texte">
+                                                            'p'
+                                                        </span>
+                                                        <span class="js-autre">
+                                                            )
+                                                        </span>
+                                                        <span class="js-autre">
+                                                            ;</br>
+                                                        </span>
+                                                        <span class="js-autre">
+                                                            para
+                                                        </span>
+                                                        <span class="js-autre">
+                                                            .
+                                                        </span>
+                                                        <span class="js-autre">
+                                                            textContent
+                                                        </span>
+                                                        <span class="js-ponctuation">
+                                                            =
+                                                        </span>
+                                                        <span class="js-texte">
+                                                            'Paragraphe ajouté'
+                                                        </span>    
+                                                        <span class="js-autre">
+                                                            ;</br>
+                                                        </span>
+                                                    </p>
+                                                    <p class="js-appel">
+                                                        document
+                                                    </p>
+                                                    <p class="js-autre">
+                                                        .
+                                                    </p>
+                                                    <p class="js-parametre">
+                                                        getElementById
+                                                    </p>
+                                                    <p class="js-autre">
+                                                        (
+                                                    </p>
+                                                    <p class="js-texte">
+                                                        'ajout-paragraphe'
+                                                    </p>
+                                                    <p class="js-autre">
+                                                        )
+                                                    </p>                                                    
+                                                    <p class="js-autre">
+                                                        .
+                                                    </p>
+                                                    <p class="js-parametre">
+                                                        appendChild
+                                                    </p>
+                                                    <p class="js-autre">
+                                                        (
+                                                    </p>
+                                                    <p class="js-autre">
+                                                        para
+                                                    </p>
+                                                    <p class="js-autre">
+                                                        )
+                                                    </p>
+                                                    <p class="js-autre">
+                                                        ;
+                                                    </p>
+                                                </span>
+                                                <span class="js-autre">
+                                                    }
+                                                </span>
+                                            </code>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <button  id='demo-bouton-ajout-para'>Ajouter un paragraphe</button>
+                                        <div id="demo-ajout-para"></div>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Nous pouvons ajouter une balise HTML, grâce à une fonction JavaScript , suite au clic d'un bouton.</p>
+                            </div>
+                        </div>
+                        <!--4. Afficher un pop-up grâce à un bouton-->
+                        <a id="nav-pop-up-js"></a>
+                        <div class="pop-up-js">
+                            <h2 class="description">4. Afficher un pop-up grâce à un bouton</h2>
+                            <div class="bloc-code">
+                                <div class="code html-js">
+                                    <div id="button-html-js-4" class="button-html-js">
+                                        <button class="bouton-html">
+                                            HTML
+                                        </button>
+                                        <div id="code-html-js-4"> 
+                                            <code>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    button
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    id
+                                                </span>
+                                                <span class="html-balise">
+                                                    =
+                                                </span>
+                                                <span class="html-parametre-balise">
+                                                    "bouton-alerte"
+                                                </span>               
+                                                <span class="html-autre">
+                                                    >
+                                                </span>
+                                                <span class="html-autre">
+                                                    Cliquez-moi
+                                                </span>        
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-autre">
+                                                    /
+                                                </span>
+                                                <span class="html-balise">
+                                                    button
+                                                </span>                  
+                                                <span class="html-autre">
+                                                    >
+                                                </span></br>
+                                            </code>
+                                        </div> 
+                                    </div>
+                                    <div id="button-js-4">                                      
+                                        <button class="bouton-js">
+                                            JS
+                                        </button>
+                                        <div id="code-js-4"> 
+                                            <code>
+                                                <span class="js-particulier">
+                                                    let
+                                                </span>
+                                                <span class="js-autre">
+                                                    bonjour
+                                                </span>
+                                                <span class="js-ponctuation">
+                                                    =
+                                                </span>
+                                                <span class="js-appel">
+                                                    document
+                                                </span>
+                                                <span class="js-autre">
+                                                    .
+                                                </span>
+                                                <span class="js-parametre">
+                                                    getElementById
+                                                </span>
+                                                <span class="js-autre">
+                                                    (
+                                                </span>
+                                                <span class="js-texte">
+                                                    'bouton-alerte'
+                                                </span>
+                                                <span class="js-autre">
+                                                    )
+                                                </span>
+                                                <span class="js-autre">
+                                                    ;
+                                                </span></br></br>
+                                                <span class="js-autre">
+                                                    bonjour
+                                                </span>
+                                                <span class="js-autre">
+                                                    .
+                                                </span>
+                                                <span class="js-parametre">
+                                                    addEventListener
+                                                </span>
+                                                <span class="js-autre">
+                                                    (
+                                                </span>
+                                                <span class="js-texte">
+                                                    'click'
+                                                </span>
+                                                <span class="js-autre">
+                                                    ,
+                                                </span>
+                                                <span class="js-parametre">
+                                                    alerte
+                                                </span>
+                                                <span class="js-autre">
+                                                    )
+                                                </span>
+                                                <span class="js-autre">
+                                                    ;
+                                                </span></br></br>
+                                                <span class="js-particulier">
+                                                    function
+                                                </span>
+                                                <span class="js-parametre">
+                                                    alerte
+                                                </span>
+                                                <span class="js-autre">
+                                                    ()
+                                                </span>
+                                                <span class="js-autre">
+                                                    {
+                                                </span></br>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="js-special">
+                                                            alert
+                                                        </span>
+                                                        <span class="js-autre">
+                                                            (
+                                                        </span>
+                                                        <span class="js-texte">
+                                                            'Voici un pop-up !'
+                                                        </span>
+                                                        <span class="js-autre">
+                                                            )
+                                                        </span>
+                                                        <span class="js-autre">
+                                                            ;
+                                                        </span>
+                                                    </p>
+                                                </span>
+                                                <span class="js-autre">
+                                                    }
+                                                </span>
+                                            </code>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <button  id='demo-bouton-alerte'>Cliquez-moi</button>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Nous pouvons faire apparaître un pop-up, grâce à une fonction JavaScript, suite au clic d'un bouton.</p>
+                            </div>
+                        </div>
+                    </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+	<footer>
+        <div class="copyright">
+            <p>© 2023 Tech'Web créé par MARMAROLI Éléa</p>
+        </div>
+    </footer>
+    <script src='javascript.js' async></script>
+</html>
+<!--  fin-->

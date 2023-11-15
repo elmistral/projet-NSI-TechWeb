@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<!--Titre et logo du site-->
+		<title> Tech'Web </title>
+		<link rel="icon" type="image/x-icon" href="images\logo-webtech.png">
+		<!--Lien code CSS-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body id="html-page-python">
+		<!--Titre principal et logo-->
+        <div class="header">
+            <div class="logo-principal">
+                <img src="images\logo-webtech.png" alt="Logo Tech'Web" width="200px">
+            </div>
+            <div class="titre">    
+                <p>Tech'Web</p>
+            </div>
+        </div>
+		<!--Navigation-->
+        <ul class="menu">
+			<!--Page d'accueil-->
+            <li class="menu-accueil">
+              <a href="index.html">Accueil</a>
+            </li>
+			<!--Page Python-->
+            <li class="menu-python">
+                <a href="python.html">Python</a>
+            </li>
+			<!--Menu Web et Page Web-->
+            <li class="menu-web">
+                <a href="web.html">Web</a>
+				<ul class="sous-menu">
+                    <!--Page HTML-->
+					<li>
+						<a href="html.html">HTML</a>
+                    </li>
+					<!--Page CSS-->
+                    <li>
+						<a href="css.html">CSS</a>
+                    </li>
+					<!--Page JS-->
+                    <li>
+						<a href="js.html">JavaScript</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="conteneur">
+            <div class="nav-lateral">
+                <ul class="lateral">
+                    <!--1.afficher-texte-->
+                    <li class="menu-afficher-txt">
+                      <a href="#nav-afficher-txt">1. Afficher texte</a>
+                    </li>
+                    <!--2. Entrée-->
+                    <li class="menu-entree">
+                        <a href="#nav-entree">2. Entrée</a>
+                    </li>
+                    <!--3. Variable-->
+                    <li class="menu-variable">
+                        <a href="#nav-variable">3. Variable</a>
+                    </li>
+                    <!--4. Opérations-->
+                    <li class="menu-operation">
+                        <a href="#nav-operation">4. Opérations</a>
+                    </li>
+                    <!--5. Boucle for-->
+                    <li class="menu-boucle-for">
+                        <a href="#nav-boucle-for">5. Boucle for</a>
+                    </li>
+                    <!--6. Condition if-->
+                      <li class="menu-condition-if">
+                        <a href="#nav-condition">6. Condition (1)</a>
+                    </li>
+                    <!--7. Condition if, elif et else-->
+                    <li class="menu-condition-if-elif-else">
+                        <a href="#nav-condition-2">7. Condition (2)</a>
+                    </li>
+                    <!--8. Boucle tant que-->
+                    <li class="menu-boucle-tant-que">
+                        <a href="#nav-boucle-tant-que">8. Boucle tant que</a>
+                    </li>
+                    <!--9. Fonction-->
+                    <li class="menu-fonction">
+                        <a href="#nav-fonction">9. Fonction</a>
+                    </li>      
+                </ul>
+            </div>
+            <!--Fond du site--> 
+            <div class="background">
+                <!--Texte accueil-->
+                <div class="bloc-txt">
+                    <p class="intro">Python est un langage de programmation facile à apprendre et à utiliser, ce qui le rend idéal pour une grande variété de projets.</p>
+                </div>
+                <!--Base de Python-->
+                <div class="bloc-txt">
+                    <div class="base-python">
+                        <p class="chapitre">Nous allons commencer par voir les bases de ce langage de programmation :</p>
+                        <!--1. Afficher du texte-->
+                        <a id="nav-afficher-txt"></a>
+                        <div class="afficher-txt">
+                            <h2 class="description">1. Afficher du texte</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="python-particulier">
+                                            print
+                                        </span>
+                                        <span class="python-autre">
+                                            (
+                                        </span>
+                                        <span class="python-texte">
+                                            "Hello World"
+                                        </span>
+                                        <span class="python-autre">
+                                            )
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            Hello World
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Le mot qui est entre guillemets va être écrit dans le terminal.</p>
+                            </div>
+                        </div>
+                        <!--2. Entrée-->
+                        <a id="nav-entree"></a>
+                        <div class="entre">
+                            <h2 class="description">2. Entrée</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="python-autre">
+                                            n
+                                        </span>
+                                        <span class="python-operation">
+                                            =
+                                        </span>
+                                        <span class="python-particulier">
+                                            input
+                                        </span>
+                                        <span class="python-autre">
+                                            (
+                                        </span>
+                                        <span class="python-texte">
+                                            'Entrer un nombre : '
+                                        </span>
+                                        <span class="python-autre">
+                                            )
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            Entrer un nombre : ...
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>La commande input va demander à l'utilisateur de répondre.</p>
+                            </div>
+                        </div>
+                        <!--3. Variables-->
+                        <a id="nav-variable"></a>
+                        <div class="variable">
+                            <h2 class="description">3. Variable</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="python-autre">
+                                            n
+                                        </span>
+                                        <span class="python-operation">
+                                            =
+                                        </span>
+                                        <span class="python-nombre">
+                                            1
+                                        </span><br>
+                                        <span class="python-particulier">
+                                            print
+                                        </span>
+                                        <span class="python-autre">
+                                            (
+                                        </span>
+                                        <span class="python-texte">
+                                            "Le nombre n est égal à "
+                                        </span>
+                                        <span class="python-autre">
+                                            ,n)
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            Le nombre n est égal à 1
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Nous pouvons attribuer une valeur à une lettre pour former une variable. Puis, nous l'affichons grâce à la commande print() vu précédemment.</p>
+                            </div>
+                        </div>
+                        <!--4. Opérations-->
+                        <a id="nav-operation"></a>
+                        <div class="operation">
+                            <h2 class="description">4. Opérations</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="python-commentaire">
+                                            <p>#Addition</p>
+                                        </span>
+                                        <span class="python-nombre">
+                                            1
+                                        </span>
+                                        <span class="python-operation">
+                                            +
+                                        </span>
+                                        <span class="python-nombre">
+                                            3
+                                        </span>
+                                    </code>
+                                    <code>
+                                        <span class="python-commentaire">
+                                            <p>#Soustraction</p>
+                                        </span>
+                                        <span class="python-nombre">
+                                            1
+                                        </span>
+                                        <span class="python-operation">
+                                            -
+                                        </span>
+                                        <span class="python-nombre">
+                                            3
+                                        </span>
+                                    </code>
+                                    <code>
+                                        <span class="python-commentaire">
+                                            <p>#Multiplication</p>
+                                        </span>
+                                        <span class="python-nombre">
+                                            1
+                                        </span>
+                                        <span class="python-operation">
+                                            *
+                                        </span>
+                                        <span class="python-nombre">
+                                            3
+                                        </span>
+                                    </code>
+                                    <code>
+                                        <span class="python-commentaire">
+                                            <p>#Division</p>
+                                        </span>
+                                        <span class="python-nombre">
+                                            1
+                                        </span>
+                                        <span class="python-operation">
+                                            /
+                                        </span>
+                                        <span class="python-nombre">
+                                            3
+                                        </span>
+                                    </code>
+                                    <code>
+                                        <span class="python-commentaire">
+                                            <p>#Division euclidienne</p>
+                                        </span>
+                                        <span class="python-nombre">
+                                            1
+                                        </span>
+                                        <span class="python-operation">
+                                            //
+                                        </span>
+                                        <span class="python-nombre">
+                                            3
+                                        </span>
+                                    </code>
+                                    <code>
+                                        <span class="python-commentaire">
+                                            <p>#Reste d'une division euclidienne</p>
+                                        </span>
+                                        <span class="python-nombre">
+                                            1
+                                        </span>
+                                        <span class="python-operation">
+                                            %
+                                        </span>
+                                        <span class="python-nombre">
+                                            3
+                                        </span>
+                                    </code>
+                                    <code>
+                                        <span class="python-commentaire">
+                                            <p>#Puissance</p>
+                                        </span>
+                                        <span class="python-nombre">
+                                            1
+                                        </span>
+                                        <span class="python-operation">
+                                            **
+                                        </span>
+                                        <span class="python-nombre">
+                                            3
+                                        </span>
+                                    </code>
+                                    <code>
+                                        <span class="python-commentaire">
+                                            <p>#Priorité opératoire</p>
+                                        </span>
+                                        <span class="python-autre">
+                                            (
+                                        </span>
+                                        <span class="python-nombre">
+                                            1
+                                        </span>
+                                        <span class="python-operation">
+                                            +
+                                        </span>
+                                        <span class="python-nombre">
+                                            3
+                                        </span>
+                                        <span class="python-autre">
+                                            )
+                                        </span>
+                                        <span class="python-operation">
+                                            *
+                                        </span>
+                                        <span class="python-nombre">
+                                            3
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            4<br>
+                                            -2<br>
+                                            3<br>
+                                            0,3333333333333333<br>
+                                            0<br>
+                                            3<br>
+                                            1<br>
+                                            12
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Pour calculer, nous utilisons ces différents signes opératoires.</p>
+                            </div>
+                        </div>
+                        <!--5. Boucle for-->
+                        <a id="nav-boucle-for"></a>
+                        <div class="boucle-for">
+                            <h2 class="description">5. Boucle for</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="python-autre">
+                                            n
+                                        </span>
+                                        <span class="python-operation">
+                                            =
+                                        </span>
+                                        <span class="python-nombre">
+                                            1
+                                        </span><br>
+                                        <span class="python-operation">
+                                            for
+                                        </span>
+                                        <span class="python-autre">
+                                            i
+                                        </span>
+                                        <span class="python-operation">
+                                            in
+                                        </span>
+                                        <span class="python-range">
+                                            range
+                                        </span>
+                                        <span class="python-autre">
+                                            (
+                                        </span>
+                                        <span class="python-nombre">
+                                            5
+                                        </span>
+                                        <span class="python-autre">
+                                            ):
+                                        </span><br>
+                                        <span class="indentation">
+                                            <p>
+                                                <span class="python-autre">
+                                                    n
+                                                </span>
+                                                <span class="python-operation">
+                                                    =
+                                                </span>
+                                                <span class="python-autre">
+                                                    n
+                                                </span>
+                                                <span class="python-operation">
+                                                    +
+                                                </span>
+                                                <span class="python-nombre">
+                                                    1
+                                                </span> 
+                                            </p>
+                                            
+                                        </span>
+                                            
+                                        <span class="indentation">
+                                            <p>
+                                                <span class="python-particulier">
+                                                    print
+                                                </span>
+                                                <span class="python-autre">
+                                                    (
+                                                </span>
+                                                <span class="python-texte">
+                                                    "n= "
+                                                </span>
+                                                <span class="python-autre">
+                                                    ,n)
+                                                </span> 
+                                            </p>
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            n= 2<br>
+                                            n= 3<br>
+                                            n= 4<br>
+                                            n= 5<br>
+                                            n= 6
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>La boucle permet de répéter un certain nombre de fois un programme.</p>
+                            </div>
+                        </div>
+                        <!--6. Condition -->
+                        <a id="nav-condition"></a>
+                        <div class="condition">
+                            <h2 class="description">6. Condition (1)</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="python-operation">
+                                            if
+                                        </span>
+                                        <span class="python-autre">
+                                            (
+                                        </span>
+                                        <span class="python-nombre">
+                                            3
+                                        </span>
+                                        <span class="python-operation">
+                                            >
+                                        </span>
+                                        <span class="python-nombre">
+                                            0
+                                        </span>
+                                        <span class="python-autre">
+                                            ):
+                                        </span>
+                                        <span class="indentation">
+                                            <p>
+                                                <span class="python-particulier">
+                                                    print
+                                                </span>
+                                                <span class="python-autre">
+                                                    (
+                                                </span>
+                                                <span class="python-texte">
+                                                    "3 est supérieur à zéro"
+                                                </span>
+                                                <span class="python-autre">
+                                                    )
+                                                </span> 
+                                            </p>
+                                        </span>  
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            3 est supérieur à zéro
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Si la condition est vraie, l'action située ensuite est effectuée.</p>
+                            </div>
+                        </div>
+                        <!--7. Condition 2-->
+                        <a id="nav-condition-2"></a>
+                        <div class="condition-2">
+                            <h2 class="description">7. Condition (2)</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="python-autre">
+                                            n
+                                        </span>
+                                        <span class="python-operation">
+                                            =
+                                        </span>
+                                        <span class="python-range">
+                                            int
+                                        </span>
+                                        <span class="python-autre">
+                                            (
+                                        </span>
+                                        <span class="python-particulier">
+                                            input
+                                        </span>
+                                        <span class="python-autre">
+                                            (
+                                        </span>
+                                        <span class="python-texte">
+                                            "Entrer un nombre :"
+                                        </span>
+                                        <span class="python-autre">
+                                            ))
+                                        </span><br>
+                                        <span class="python-operation">
+                                            if
+                                        </span>
+                                        <span class="python-autre">
+                                            (n
+                                        </span>
+                                        <span class="python-operation">
+                                            <
+                                        </span>
+                                        <span class="python-nombre">
+                                            0
+                                        </span>
+                                        <span class="python-autre">
+                                            ):
+                                        </span>
+                                        <span class="indentation">
+                                            <p>
+                                                <span class="python-particulier">
+                                                    print
+                                                </span>
+                                                <span class="python-autre">
+                                                    (
+                                                </span>
+                                                <span class="python-texte">
+                                                    "Le nombre est négatif"
+                                                </span>
+                                                <span class="python-autre">
+                                                    )
+                                                </span> 
+                                            </p>
+                                        </span>
+                                            
+                                        <span class="python-operation">
+                                            if
+                                        </span>
+                                        <span class="python-autre">
+                                            (n
+                                        </span>
+                                        <span class="python-operation">
+                                            ==
+                                        </span>
+                                        <span class="python-nombre">
+                                            0
+                                        </span>
+                                        <span class="python-autre">
+                                            ):
+                                        </span>
+                                        <span class="indentation">
+                                            <p>
+                                                <span class="python-particulier">
+                                                    print
+                                                </span>
+                                                <span class="python-autre">
+                                                    (
+                                                </span>
+                                                <span class="python-texte">
+                                                    "Le nombre est nul"
+                                                </span>
+                                                <span class="python-autre">
+                                                    )
+                                                </span> 
+                                            </p>
+                                        </span>
+                                        <span class="python-operation">
+                                            if
+                                        </span>
+                                        <span class="python-autre">
+                                            (n
+                                        </span>
+                                        <span class="python-operation">
+                                            >
+                                        </span>
+                                        <span class="python-nombre">
+                                            0
+                                        </span>
+                                        <span class="python-autre">
+                                            ):
+                                        </span>
+                                        <span class="indentation">
+                                            <p>
+                                                <span class="python-particulier">
+                                                    print
+                                                </span>
+                                                <span class="python-autre">
+                                                    (
+                                                </span>
+                                                <span class="python-texte">
+                                                    "Le nombre est positif"
+                                                </span>
+                                                <span class="python-autre">
+                                                    )
+                                                </span>
+                                            </p>
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            Entrer un nombre : -3 <br>Le nombre est négatif.
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Les conditions sont vérifiées une par une, si le if n'est pas validé, il passe au elif qui finit par else, si aucune des conditions précédentes n'est valide.</p>
+                            </div>
+                        </div>
+                        <!--8. Boucle tant quue-->
+                        <a id="nav-boucle-tant-que"></a>
+                        <div class="boucle-while">
+                            <h2 class="description">8. Boucle tant que</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="python-autre">
+                                            a
+                                        </span>
+                                        <span class="python-operation">
+                                            =
+                                        </span>
+                                        <span class="python-nombre">
+                                            3
+                                        </span><br>
+                                        <span class="python-operation">
+                                            while
+                                        </span>
+                                        <span class="python-autre">
+                                            (a
+                                        </span>
+                                        <span class="python-operation">
+                                            <
+                                        </span>
+                                        <span class="python-nombre">
+                                            11
+                                        </span>
+                                        <span class="python-autre">
+                                            ):
+                                        </span>
+                                        <span class=" indentation">
+                                            <p>
+                                                <span class="python-particulier">
+                                                    print
+                                                </span>
+                                                <span class="python-autre">
+                                                     (a)
+                                                </span>
+                                            </p>
+                                        </span>
+                                        <span class="indentation">
+                                            <p>
+                                                <span class="python-autre">
+                                                    a
+                                                </span>
+                                                <span class="python-operation">
+                                                    =
+                                                </span>
+                                                <span class="python-autre">
+                                                    a
+                                                </span>
+                                                <span class="python-operation">
+                                                    +
+                                                </span>
+                                                <span class="python-nombre">
+                                                    1
+                                                </span>   
+                                            </p>
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            3<br>
+                                            4<br>
+                                            5<br>
+                                            6<br>
+                                            7<br>
+                                            8<br>
+                                            9<br>
+                                            10
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Tant que la condition n'est pas vérifiée le programme se répète.</p>
+                            </div>
+                        </div>
+                        <!--9. Fonction-->
+                        <a id="nav-fonction"></a>
+                        <div class="fonction">
+                            <h2 class="description">9. Fonction</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="python-operation">
+                                            def
+                                        </span>
+                                        <span class="python-particulier">
+                                            f
+                                        </span>
+                                        <span class="python-autre">
+                                            (
+                                        </span>
+                                        <span class="python-inconnu">
+                                            x
+                                        </span>
+                                        <span class="python-autre">
+                                            ):
+                                        </span>
+                                        <span class="indentation">
+                                            <p>
+                                                <span class="python-operation">
+                                                    return
+                                                </span>
+                                                <span class="python-nombre">
+                                                    3
+                                                </span>
+                                                <span class="python-operation">
+                                                    *
+                                                </span>
+                                                <span class="python-inconnu">
+                                                    x
+                                                </span>
+                                                <span class="python-operation">
+                                                    +
+                                                </span>
+                                                <span class="python-nombre">
+                                                    4
+                                                </span>  
+                                            </p>
+                                        </span></br>
+                                        <span class="python-particulier">
+                                            print
+                                        </span>
+                                        <span class="python-autre">
+                                            (
+                                        </span>
+                                        <span class="python-texte">
+                                            "L'image de 6 par f est"
+                                        </span>
+                                        <span class="python-autre">
+                                            ,
+                                        </span>
+                                        <span class="python-particulier">
+                                            f
+                                        </span>
+                                        <span class="python-autre">
+                                            (
+                                        </span>
+                                        <span class="python-nombre">
+                                            6
+                                        </span>
+                                        <span class="python-autre">
+                                            ))
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            L'image de 6 par f est 22
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Nous définissons la fonction, puis, nous pouvons l'appeler par la suite.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+	<footer>
+        <div class="copyright">
+            <p>© 2023 Tech'Web créé par MARMAROLI Éléa</p>
+        </div>
+    </footer>
+</html>
+<!--  fin-->

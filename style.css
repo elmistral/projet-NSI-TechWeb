@@ -1,0 +1,509 @@
+/*Général*/
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    background-color: #e7eaff;
+    width: 100%;
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+/*Titre principal*/
+.titre p{
+    color : transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right,#68b0de,#371af9);
+    font-size:70px;
+    text-align: center;
+    margin-bottom: 0;
+}
+h1{
+    display: none;
+}
+h2{
+    font-size: 20px;
+}
+p{
+    font-size: 18px;
+}
+/*Bloc titre et logo*/
+.header{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    width: 100%;
+}
+    /*Logo*/
+    .logo-principal{
+        margin-right: 10px;
+    }
+    /*Disposition du titre et de la phrase d'accroche*/
+        .titre{
+            display: flex;
+            flex-direction: column;
+            align-content: space-between ;
+        }
+/*Navigation*/
+.menu {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: transparent;
+    justify-content: space-between;
+    margin : 0 150px 0 150px !important;
+    padding: 30px;
+}
+.menu li {
+    list-style-type: none ;
+    width: 30%;
+}
+a {   
+    text-align: center;
+    color : transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right,#68b0de,#371af9);
+    text-decoration: none;
+    transition: all 1s ;
+    font-size: 30px;
+}
+a:hover{
+    color : transparent;
+    background-clip: text;
+    background-image: linear-gradient(to right,#371af9,#68b0de);
+}
+a:hover li{
+    text-decoration: underline;
+}
+
+    /*Sous menu déroulant*/
+    .menu-web{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .menu-web ul{
+        display: none;
+    }
+    li:hover ul.sous-menu{    
+        display: flex;
+        flex-direction: column;
+    }
+    .sous-menu{
+        padding-left: 320px;
+        text-align: start; 
+    }
+
+/*Fond du site*/
+.background{
+    background-color: #02072f;
+    padding: 20px;
+    width: 100%;
+}
+    /*Menu latéral*/
+    .conteneur{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+        .nav-lateral{
+            background-color: #02072f;
+            border-right: 2px solid #e7eaff;
+            flex-basis: 20%;
+            line-height: 25px;
+            
+        }
+        .nav-lateral li {
+            list-style-type: none;
+            padding-bottom: 40px;
+        }
+        .nav-lateral a {
+            font-size: 20px;            
+        }
+        .nav-lateral ul {
+            padding-left: 20px;
+        }
+    /*Bloc texte*/
+    .bloc-txt{
+        background-color: #ffffff;
+        border-radius: 25px 25px 25px 25px;
+        margin: 20px 80px 40px 80px;
+        padding: 20px 40px 20px 40px;
+    }    
+    
+        .image-page-accueil{
+            text-align: center;
+        }
+        .intro{       
+            color : #002e5f;
+            text-align:center;
+        }
+        .chapitre{        
+            color : #002e5f;
+        }
+        .description{      
+            color : #002e5f;
+            padding: 20px 0 20px 60px;
+            text-decoration: underline;
+        }
+        .bloc-code{
+            border:  2px solid black;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: start;
+            align-content: start;
+        }
+        .lien-base {
+            padding: 0 40px 20px 40px;
+        }
+        .lien-base a{
+            line-height: 50px;
+        }
+            .code{
+                background-color: #292b3b;
+                font-size: 15px !important; 
+                flex-basis: 60%;   
+                padding: 5px;            
+            }
+            code span{
+                padding-left: 10px;
+            }
+                /*Code Python*/
+                .python-particulier, .html-parametre-balise, .css-class, .js-parametre{                  /*Print, Input, forward*/
+                    color: #1be912;
+                }
+                .python-autre, .html-autre, .css-autre, .js-autre{
+                    color: #ffffff;
+                }
+                .python-texte, .html-lien-balise, .css-texte, .js-texte{
+                    color: #eced99;
+                }
+                .python-operation, .html-balise, .css-balise, .css-ponctuation, .css-valeur, .js-particulier, .js-ponctuation{                    /*Opération (+,-,...), for...in, if, elif, else,while, def, return*/
+                    color: #f64bfb;
+                }
+                .python-nombre, .css-parametre, .js-appel{
+                    color: #784bfb;
+                }
+                .python-commentaire, .html-commentaire, .css-commentaire, .js-commentaire{
+                    color: #4f5677;
+                }
+                .python-range, .css-particulier, .js-special{                        /*range, int*/
+                    color: #55f7ff;
+                }
+                .python-inconnu, .css-fichier{
+                    color: #e8980c;
+                }
+                .python-import{
+                    color: #e80c77;
+                }
+                .python-biblio{
+                    color: #c2c2c2;
+                }
+                .indentation{                    
+                    display: flex;
+                    flex-flow: row wrap !important;                                  
+                }
+                /*.indentation p{
+                    text-indent: 20px;
+                    line-height: 15px;
+                    font-size: 15px !important;
+                }*/
+                .indentation span{
+                    text-indent: 20px;
+                    line-height: 15px;
+                    font-size: 15px !important;
+                }
+                .indentation-2{
+                    display: flex;
+                    flex-flow: row wrap !important;
+                }
+                .indentation-2 p{
+                    text-indent: 40px;
+                    line-height: 15px;
+                    font-size: 15px !important;
+                }
+                .indentation-2 span{
+                    text-indent: 40px;
+                    line-height: 15px;
+                    font-size: 15px !important;
+                }
+                /*Code HTML*/
+                .html-code{
+                    color: #000000;
+                    margin: 0 0 0 0;
+                    text-align: start;
+                }
+                .titre-code{
+                    display: flex;
+                }
+                .lien-code a{
+                    font-size: 18px !important;
+                }
+                .lien-code a:hover{
+                    text-decoration: underline;
+                    color: #000000;
+                }
+                .code-2{
+                    display: flex !important;
+                    flex-flow: column wrap !important;   
+                }                
+                /*Code bouton*/
+                .html-css{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    height: auto;
+                    padding: 0 0 20px  0;
+                }
+                .html-css div{
+                    width: auto;
+                    flex-basis: 50%;
+                }
+                .html-css button{
+                    margin: 0 0 20px 0;
+                    padding: 5px 150px 5px 150px;
+                    border-bottom: 2px solid #000000;
+                    background-color: transparent;
+                    color: #ffffff;
+                    font-weight: bold;  
+                    width: 100%;                  
+                }
+                .html-css button:hover{
+                    background-color: #aaaecd;
+                    color: #000000;                  
+                }
+                .html-css button:active{
+                    background-color: #aaaecd !important;
+                    color: #000000 !important;
+                }
+                .bouton-html{
+                    border-right: 2px solid #000000;
+                }      
+                .button-html-css{
+                    display: flex;
+                    flex-flow: column nowrap;                    
+                }
+                
+                .html-js{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    height: auto;
+                    padding: 0 0 20px  0;
+                }
+                .html-js div{
+                    width: auto;
+                    flex-basis: 50%;
+                }
+                .html-js button{
+                    margin: 0 0 20px 0;
+                    padding: 5px 150px 5px 150px;
+                    border-bottom: 2px solid #000000;
+                    background-color: transparent;
+                    color: #ffffff;
+                    font-weight: bold; 
+                    width: 100%;                   
+                }
+                .html-js button:hover{
+                    background-color: #aaaecd;
+                    color: #000000;                  
+                }
+                .html-js button:active{
+                    background-color: #aaaecd !important;
+                    color: #000000 !important;
+                }
+                .button-html-js{
+                    display: flex;
+                    flex-flow: column nowrap;
+                }
+                            
+            /*Apperçu du code*/
+            .demo{
+                padding: 10px 10px 10px 10px;
+                flex-basis: 40% !important;
+                border-left: 2px solid #000000;
+            }
+                /*Apperçu Page CSS*/
+                .demo-selecteur-css p{
+                    color: blue;
+                    margin: 0;
+                }
+                .demo-selecteur-css h1{
+                    color: green;
+                    margin: 0;
+                    display: flex !important;
+                    margin: 0 0 0 0;
+                    font-weight: normal;
+                }
+                .demo-class-css{
+                    color: blue;
+                    display: flex !important;
+                    margin: 0 0 0 0;
+                    font-weight: normal;
+                }
+                .demo-class-css-titre{
+                    color: #010d7b;
+                    display: flex !important;
+                    margin: 0 0 0 0;
+                    font-weight: normal;
+                }
+                .demo-police{
+                    font-family: 'Courier New', Courier, monospace;
+                }
+                .demo-taille{
+                    font-size: 40px;
+                }
+                .demo-epaisseur{
+                    font-weight: bold;
+                }
+                .demo-italique{
+                    font-style: italic;
+                }
+                .demo-decoration{
+                    text-decoration: underline;
+                }
+                .demo-alignement{
+                    text-align: center;
+                }
+                .demo-alinea{
+                    text-indent: 20px;
+                }
+                .demo-couleur{
+                    color: pink;
+                }
+                .demo-fond{
+                    background-color: yellow;
+                }
+                .demo-opacite{
+                    opacity: 40%;
+                }
+                .demo-bordure{
+                    border: 2px solid;
+                }
+                .demo-interieur-css{
+                    padding: 2px 6px 2px 6px;
+                    border: 2px solid;
+                }
+                .demo-exterieur-css{
+                    margin: 10px 3px 10px 3px;
+                    border: 2px solid;
+                }
+                /*Demo sur page HTML*/
+                .demo-bouton-html{
+                    padding: 10px 40px 10px 40;
+                }
+                .demo-bouton-html input{
+                    padding: 10px;
+                }
+            /*Commentaire sur le code*/
+            .commentaire{
+                padding: 10px 10px 10px 10px;
+            }
+
+            /*Autres codes*/
+                /*Colorer une image au survol*/
+                .demo-image-survol{
+                    display: flex;                   
+                    flex-flow: column wrap;
+                    justify-content: center;
+                    align-content: center;
+                }
+                .demo-image-survol img{
+                    filter: grayscale();
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    transition: filter .4s ease-in-out;                    
+                }
+                .demo-image-survol:hover img {
+                    filter: none;
+                }
+                .demo-title-image-survol{
+                    position: relative;
+                }
+                .demo-title-image-survol h3{
+                    font-family: cursive;
+                    font-size: 20px;
+                    text-align: center;
+                    color: #6a69a0;
+                }
+                .demo-title-image-survol::after {
+                    position: absolute;
+                    content: "";
+                    width: 0%;  
+                    height: 4px;
+                    background-color: #6a69a0;
+                    left: 50%;
+                    bottom: -10%;
+                    transition: all 0.4s ease-in-out;
+                }
+                .demo-image-survol:hover .demo-title-image-survol::after {
+                    width: 100%;
+                    left: 0;
+                }
+                .demo-image-fond-texte{
+                    font-size: 50px;
+                    margin: 0;
+                    background-image: url(../images/paysage.jpg);
+                    background-size: 20%;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                }
+                .demo-image-image img{
+                    position: relative;
+                    background: url(../images/coucher-soleil.jpg);
+                    height: 250px;
+                    background-size: 70%;
+                    background-repeat: no-repeat !important;
+                    background-position-x: 55%;
+                    background-position-y: 45%;
+                }
+                .demo-image-image::before img{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: auto;
+                    min-height: auto;
+                    background: url(../images/coucher-soleil.jpg);
+                    background-repeat: no-repeat !important;
+                    background-position-x: 50%;
+                    background-position-y: 55%;
+                    height: 600px;
+                    background-size: 80%;
+                    background-position: center;
+                    mix-blend-mode: screen;
+                }
+                
+/*Pied de page*/
+footer{
+    font-size:25px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+/*Réglage du responsive*/
+/*Taille mobile*/
+@media (max-width: 500px){
+    .image-page-accueil img{
+        margin: 150px 0 150px 0;
+    }
+}
+/*Taille tablette*/
+@media (max-width: 900px) {
+    .bloc-text{
+        margin: 20px !important;
+    }
+}    
+/*Taille ordinateur portable*/
+@media (max-width: 1000px){
+    #html-page-web .bloc-code{
+        flex-flow: row wrap !important;
+    }
+    #html-page-css .bloc-code{
+        flex-flow: row wrap !important;
+    }
+    #html-page-js .bloc-code{
+        flex-flow: row wrap !important;
+    }
+}
+/*Taille grand écran*/

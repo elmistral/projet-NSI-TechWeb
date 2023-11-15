@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html id="html-page-html">
+	<head>
+		<meta charset="UTF-8"> 
+		<!--Titre et logo du site-->
+		<title> Tech'Web </title>
+		<link rel="icon" type="image/x-icon" href="images\logo-webtech.png">
+		<!--Lien code CSS-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<!--Titre principal et logo-->
+        <div class="header">
+            <div class="logo-principal">
+                <img src="images\logo-webtech.png" alt="Logo Tech'Web" width="200px">
+            </div>
+            <div class="titre">    
+                <p>Tech'Web</p>
+            </div>
+        </div>
+		<!--Navigation-->
+        <ul class="menu">
+			<!--Page d'accueil-->
+            <li class="menu-accueil">
+              <a href="index.html">Accueil</a>
+            </li>
+			<!--Page Python-->
+            <li class="menu-python">
+                <a href="python.html">Python</a>
+            </li>
+			<!--Menu Web et Page Web-->
+            <li class="menu-web">
+                <a href="web.html">Web</a>
+				<ul class="sous-menu">
+                    <!--Page HTML-->
+					<li>
+						<a href="html.html">HTML</a>
+                    </li>
+					<!--Page CSS-->
+                    <li>
+						<a href="css.html">CSS</a>
+                    </li>
+					<!--Page JS-->
+                    <li>
+						<a href="js.html">JavaScript</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="conteneur">
+            <div class="nav-lateral">
+                <ul class="lateral">
+                    <!--1. Écrire des titres-->
+                    <li class="menu-titre">
+                      <a href="#nav-titre">1. Écrire des titres</a>
+                    </li> 
+                    <!--2. Écrire des paragraphes-->
+                    <li class="menu-paragraphe">
+                        <a href="#nav-paragraphe">2. Écrire des paragraphes</a>
+                    </li>
+                    <!--3. Balises orphelines-->
+                    <li class="menu-orpheline">
+                        <a href="#nav-orpheline">3. Balises orphelines</a>
+                    </li> 
+                    <!--4. Mettre des liens-->
+                    <li class="menu-lien">
+                        <a href="#nav-lien">4. Mettre des liens</a>
+                    </li> 
+                    <!--5. Afficher des images-->
+                    <li class="menu-image">
+                        <a href="#nav-image">5. Afficher des images</a>
+                    </li> 
+                    <!--6. La stucture du code HTML-->
+                    <li class="menu-stucture">
+                        <a href="#nav-stucture">6. La stucture du code HTML</a>
+                    </li> 
+                    <!--7. Les différents boutons-->
+                    <li class="menu-bouton">
+                        <a href="#nav-boutons">7. Les différents boutons</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Fond du site--> 
+            <div class="background">
+                <h1>HTML</h1>
+                <!--Texte accueil-->
+                <div class="bloc-txt">
+                    <p class="intro">HTML est un langage qui permet de créer des pages web. Il est utilisé pour structurer le contenu des pages web, comme les titres, les paragraphes, les images et les liens...</p>
+                </div>
+                <!--Base HTML-->
+                <div class="bloc-txt">
+                    <div class="base-html">
+                        <p class="chapitre">Nous allons voir les bases du langage HTML :</p>
+                        <!--1. Écrire des titres-->
+                        <a id="nav-titre"></a>
+                        <div class="base-titre">
+                            <h2 class="description">1. Écrire des titres</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            h1
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                        <span class="html-autre">
+                                            Titre 1
+                                        </span>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-autre">
+                                            /
+                                        </span>
+                                        <span class="html-balise">
+                                            h1
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            h2
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                        <span class="html-autre">
+                                            Titre 2
+                                        </span>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-autre">
+                                            /
+                                        </span>
+                                        <span class="html-balise">
+                                            h2
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            h3
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                        <span class="html-autre">
+                                            Titre 3
+                                        </span>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-autre">
+                                            /
+                                        </span>
+                                        <span class="html-balise">
+                                            h3
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            <h1 class="html-code titre-code">Titre 1</h1>
+                                            <h2 class="html-code">Titre 2</h2>
+                                            <h3 class="html-code">Titre 3</h3>
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Plus le nombre du "h" est grand (1,2,3,4,5,6), plus le titre sera de moindre importance (sous-titres). Il faut respecter l'ordre hiérarchique des titres pour chaque page du site web. Cependant, il ne faut qu'un seul titre h1 par page web, ça sera en principe le titre unique de la page.</p>
+                            </div>
+                        </div>
+                        <!--2. Écrire des paragraphes-->
+                        <a id="nav-paragraphe"></a>
+                        <div class="paragraphe">
+                            <h2 class="description">2. Écrire des paragraphes</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            p
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                        <span class="html-autre">
+                                            Paragraphe
+                                        </span>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-autre">
+                                            /
+                                        </span>
+                                        <span class="html-balise">
+                                            p
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            <p class="html-code">Titre 1</p>
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>La balise "p" permet d'écrire les paragraphes sur le site web.</p>
+                            </div>
+                        </div>
+                        <!--3. Balises orphelines-->
+                        <a id="nav-orpheline"></a>
+                        <div class="orpheline">
+                            <h2 class="description">3. Balises orphelines</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            p
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                        <span class="html-autre">
+                                            Paragraphe
+                                        </span>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-autre">
+                                            /
+                                        </span>
+                                        <span class="html-balise">
+                                            p
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-autre">
+                                            /
+                                        </span>
+                                        <span class="html-balise">
+                                            br
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            p
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                        <span class="html-autre">
+                                            Paragraphe 2
+                                        </span>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-autre">
+                                            /
+                                        </span>
+                                        <span class="html-balise">
+                                            p
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            <p class="html-code">Paragraphe</p></br>
+                                            <p class="html-code">Paragraphe 2</p>
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Il faut savoir que chaque balise HTML doit avoir une ouvrante (<...>) et une fermante (&lt;/...&gt;). Mais, il existe des balises dîtes "orphelines" (elles sont apellées comme cela, car elles n'ont pas besoin d'une balise ouvrante et fermante contrairement aux autres balises HTML); par exemple la balise &lt;/br&gt; permet un retour à la ligne forcé.</p>
+                            </div>
+                        </div>
+                        <!--4. Mettre des liens-->
+                        <a id="nav-lien"></a>
+                        <div class="lien">
+                            <h2 class="description">4. Mettre des liens</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            a
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            href
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "https://www.sainte-anne-brest.fr/"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                        <span class="html-autre">
+                                            Sainte-Anne Brest
+                                        </span>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-autre">
+                                            /
+                                        </span>
+                                        <span class="html-balise">
+                                            a
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal lien-code">
+                                            <a href="https://www.sainte-anne-brest.fr/" class="html-code ">Sainte-Anne Brest</a>
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire ">
+                                <p>La balise &lt;a&gt; permet d'implémenter des liens cliquables, dans un site web.</p>
+                            </div>
+                        </div>
+                        <!--5. Afficher des images-->
+                        <a id="nav-image"></a>
+                        <div class="image">
+                            <h2 class="description">5. Afficher des images</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            img
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            src
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            images\logo-webtech.png
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            alt
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            Logo de Tech'Web
+                                        </span>
+                                        <span class="html-autre">
+                                            /
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            <img src="images\logo-webtech.png" alt="Logo de Tech'Web" height="150px"/>
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>La balise &lt;img&gt; permet d'afficher une image. Avec le paramètre "src", nous allons chercher le lien vers l'image, et pour finir, le paramètre "alt" permet d'afficher un texte, si l'image ne fonctionne pas.</p>
+                            </div>
+                        </div>
+                        <!--6. La stucture du code HTML-->
+                        <a id="nav-structure"></a>
+                        <div class="structure">
+                            <h2 class="description">6. La stucture du code HTML</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code class="code-2 ">
+                                        <div>                                        
+                                            <span class="html-autre">
+                                                <
+                                            </span>
+                                            <span class="html-balise">
+                                                !
+                                            </span>
+                                            <span class="html-balise">
+                                                DOCTYPE&nbsp
+                                            </span>
+                                            <span class="html-parametre-balise">
+                                                html
+                                            </span>
+                                            <span class="html-autre">
+                                                >
+                                            </span>
+                                            <div>
+                                                <span class="html-autre">
+                                                    <
+                                                </span>
+                                                <span class="html-balise">
+                                                    html
+                                                </span>
+                                                <span class="html-autre">
+                                                    >
+                                                </span>  
+                                            </div>                                      
+                                            <div>
+                                                <span class="indentation">
+                                                    <p>
+                                                        <span class="html-autre">
+                                                            <
+                                                        </span>
+                                                        <span class="html-balise">
+                                                            head
+                                                        </span>
+                                                        <span class="html-autre">
+                                                            ></br>
+                                                        </span>  
+                                                    </p>
+                                                </span>   
+                                            </div> 
+                                        </div>
+                                        <div>    
+                                            <span class="indentation-2">
+                                                <p>
+                                                   <span class="html-autre">
+                                                        <
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        meta
+                                                    </span>
+                                                    <span class="html-parametre-balise">
+                                                        charset
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        =
+                                                    </span>
+                                                    <span class="html-lien-balise">
+                                                        "UTF-8"
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        ></br> 
+                                                    </span>
+                                                </p>
+                                            </span>
+                                            <span class="indentation-2"> 
+                                                <p>
+                                                    <span class="html-autre">
+                                                        <
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        title
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        >
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        Titre du site     
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        <        
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        /         
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        title
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        ></br>
+                                                    </span>
+                                                </p>    
+                                            </span>
+                                            <span class="indentation-2">
+                                                <p>
+                                                    <span class="html-autre">
+                                                        <
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        link
+                                                    </span>
+                                                    <span class="html-parametre-balise">
+                                                        rel
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        =
+                                                    </span>
+                                                    <span class="html-lien-balise">
+                                                        "icon"
+                                                    </span>
+                                                    <span class="html-parametre-balise">
+                                                        type
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        =
+                                                    </span>
+                                                    <span class="html-lien-balise">
+                                                        "image/x-icon"
+                                                    </span>
+                                                    <span class="html-parametre-balise">
+                                                        href
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        =
+                                                    </span>
+                                                    <span class="html-lien-balise">
+                                                        "images\logo-webtech.png"
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        >
+                                                    </span>
+                                                </p>
+                                            </span>
+                                            <span class="indentation">
+                                                <p>
+                                                    <span class="html-autre">
+                                                        <
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        /
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        head
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        >
+                                                    </span>
+                                                </p>
+                                            </span>
+                                            <span class="indentation">
+                                                <p>
+                                                    <span class="html-autre">
+                                                        <
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        body
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        >
+                                                    </span>
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="indentation-2">
+                                                <p>
+                                                    <span class="html-autre">
+                                                        <
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        p
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        >
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        Main ou corps du site
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        <
+                                                    </span>                                                        
+                                                    <span class="html-autre">
+                                                        /
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        p
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        >
+                                                    </span>   
+                                                </p>
+                                            </span>
+                                        </div>
+                                        <div>   
+                                            <span class="indentation">  
+                                                <p>
+                                                    <span class="html-autre">
+                                                        <
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        /
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        body
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        >
+                                                    </span> 
+                                                </p>                                                      
+                                            </span>  
+                                        </div>
+                                        <div>
+                                            <span class="indentation">
+                                                <p>
+                                                    <span class="html-autre">
+                                                        <
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        footer
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        >
+                                                    </span>
+                                                </p>                                                
+                                            </span>                                            
+                                        </div>
+                                        <div>
+                                            <span class="indentation-2">
+                                                <p>
+                                                    <span class="html-autre">
+                                                        <
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        p
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        >
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        Pied du site
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        <
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        /
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        p
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        >
+                                                    </span>
+                                                </p>
+                                                
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="indentation">
+                                                <p>
+                                                    <span class="html-autre">
+                                                        <
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        /
+                                                    </span>
+                                                    <span class="html-balise">
+                                                        footer
+                                                    </span>
+                                                    <span class="html-autre">
+                                                        >
+                                                    </span>
+                                                </p>                                                
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="html-autre">
+                                                <
+                                            </span>
+                                            <span class="html-autre">
+                                                /
+                                            </span>
+                                            <span class="html-balise">
+                                                html
+                                            </span>
+                                            <span class="html-autre">
+                                                >
+                                            </span>
+                                        </div>
+                                    </code>
+                                </div>
+                                <div class="demo">
+                                    <code>
+                                        <span class="terminal">
+                                            ...
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Les balises &lt;DOCTYPE&gt; et &lt;html&gt; permettent de définir que c'est du code HTML5. </br>La balise &lt;head&gt; comporte les paramètres du site : "meta" pour permettre d'écrire des caractères spéciaux tels que des é, à ou ù; "title" pour indiquer le titre du site dans l'onglet de navigation et "link" pour insérer le logo du site sur l'onglet de navigation. </br>La balise &lt;body&gt; permet d'écrire le corps du site. </br>Pour finir, la balise &lt;footer&gt; permet d'insérer un Pied du site.</p>
+                            </div>
+                        </div>
+                        <!--7. Les différents boutons-->
+                        <a id="nav-boutons"></a>
+                        <div class="base-boutons">
+                            <h2 class="description">7. Les différents boutons</h2>
+                            <div class="bloc-code">
+                                <div class="code">
+                                    <code>
+                                        <!--Bouton classique-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Bouton classique
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "button"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <!--Bouton à cocher-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Bouton à cocher
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "checkbox"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <!--Bouton pour sélectionner une couleur-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Bouton pour sélectionner une couleur
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "color"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <!--Bouton pour sélectionner une date-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Bouton pour sélectionner une date
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "date"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <!--Bouton pour entrer un mail-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Entrer un mail
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "email"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <!--Bouton pour choisir un fichier-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Bouton pour choisir un fichier
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "file"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <!--Bouton pour entrer un nombre-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Entrer un nombre
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "number"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <!--Bouton pour entrer un mot de passe-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Entrer un mot de passe
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "password"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <!--Barre de selection-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Barre de sélection
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "range"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <!--Barre de recherche-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Barre de recherche
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "search"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <!--Bouton d'abonnement-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Bouton d'abonnement
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "submit"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <!--Bouton de reset-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Bouton de reset
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "reset"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span></br>
+                                        <!--Bouton pour entrer un texte-->
+                                        <span class="html-commentaire">
+                                            <
+                                        </span>
+                                        <span class="html-commentaire">
+                                            !--
+                                        </span>
+                                        <span class="html-commentaire">
+                                            Bouton pour entrer un texte
+                                        </span>
+                                        <span class="html-commentaire">
+                                            --
+                                        </span>
+                                        <span class="html-commentaire">
+                                            >
+                                        </span></br>
+                                        <span class="html-autre">
+                                            <
+                                        </span>
+                                        <span class="html-balise">
+                                            input
+                                        </span>
+                                        <span class="html-parametre-balise">
+                                            type
+                                        </span>
+                                        <span class="html-balise">
+                                            =
+                                        </span>
+                                        <span class="html-lien-balise">
+                                            "text"
+                                        </span>
+                                        <span class="html-autre">
+                                            >
+                                        </span>
+                                    </code>
+                                </div>
+                                <div class="demo demo-bouton-html">
+                                    <code>
+                                        <span class="terminal">
+                                            <input type="button"></br>
+                                            <input type="checkbox"></br>
+                                            <input type="color"></br>
+                                            <input type="date"></br>
+                                            <input type="email"></br>
+                                            <input type="file"></br>
+                                            <input type="number"></br>
+                                            <input type="password"></br>
+                                            <input type="range"></br>
+                                            <input type="search"></br>
+                                            <input type="submit"></br>
+                                            <input type="reset"></br>
+                                            <input type="text">
+                                        </span>
+                                    </code>
+                                </div>
+                            </div>
+                            <div class="commentaire">
+                                <p>Il existe différents boutons pour intéragir avec l'utilisateur.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</body>
+	<footer>
+        <div class="copyright">
+            <p>© 2023 Tech'Web créé par MARMAROLI Éléa</p>
+        </div>
+    </footer>
+</html>
+<!--  fin-->
