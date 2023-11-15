@@ -432,7 +432,7 @@ a:hover li{
                 .demo-image-fond-texte{
                     font-size: 50px;
                     margin: 0;
-                    background-image: url(..\images\paysage.jpg);
+                    background-image: url(images\paysage.jpg);
                     background-size: 20%;
                     background-clip: text;
                     -webkit-background-clip: text;
@@ -440,7 +440,7 @@ a:hover li{
                 }
                 .demo-image-image img{
                     position: relative;
-                    background: url(..\images\coucher-soleil.jpg);
+                    background: url(images\coucher-soleil.jpg);
                     height: 250px;
                     background-size: 70%;
                     background-repeat: no-repeat !important;
